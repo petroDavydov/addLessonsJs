@@ -81,8 +81,9 @@ const tryThis = [
 	[777, "word", ["Привет", ["как сюда добраться"]]],
   ];
   
-  console.log(tryThis.flat(Infinity));
-  
+console.log(tryThis.flat(Infinity));
+//   ххххххххххххххххххх   или     хххххххххххххх
+   console.log(newTryThis.join(' ').split(' '))
   
   
   
