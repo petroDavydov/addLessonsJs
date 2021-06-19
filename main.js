@@ -85,7 +85,57 @@
 // //   ххххххххххххххххххх   или     хххххххххххххх
 //    console.log(newTryThis.join(' ').split(' '))
   
-  
+
+// const user = {
+//     name: 'John',
+//     age: 23,
+//     surname: 'Smith',
+// };
+
+// Object.defineProperty(user, "age", {
+//     enumerable: false,
+//     writable: false,
+//     configurable: false,
+// });
+
+
+
+// for (let key in user) {
+//     console.log(key);
+// }
+
+// const user2 = { ...user };
+// console.log(user2);
+// console.log(user);
+// const user3 = Object.assign({}, user);
+// const4 = JSON.parse(JSON.stringify(user))
+
+
 
 
   
+
+// const user = {
+//     name: 'John',
+//     age: 23,
+//     surname: 'Smith',
+
+// }; 
+
+
+// // Напиши функцию countProps(obj), считающую кол-во свойств в объекте. Функция возвращает число - количество свойств.
+
+// const countProps = function(obj) {
+//   // твой код
+//      return Object.keys(obj).length;
+   
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(countProps({})); // 0
+
+// console.log(countProps({ name: 'Mango', age: 2 })); // 2
+
+// console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
