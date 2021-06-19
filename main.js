@@ -123,19 +123,83 @@
 // }; 
 
 
-// // Напиши функцию countProps(obj), считающую кол-во свойств в объекте. Функция возвращает число - количество свойств.
+// Напиши функцию countTotalSalary(employees) принимающую объект зарплат. Функция считает общую сумму запрплаты работников и возращает ее. Каждое поле объекта, передаваемого в функцию, имеет вид "имя":"зарплата".
 
-// const countProps = function(obj) {
-//   // твой код
-//      return Object.keys(obj).length;
-   
+// const countTotalSalary = function(employees) {
+// let totalSalary = 0;
+// const salary = Object.values(employees);
+// for (let value of salary) {
+
+//  totalSalary += value; 
+// }
+// return totalSalary
 // };
+
+// const countTotalSalary = (employees) => Object.values(employees).reduce((acc, el) => acc + el, 0);
+
+
+// console.log(countTotalSalary({})); // 0
+
+// console.log(
+//   countTotalSalary({
+//     mango: 100,
+//     poly: 150,
+//     alfred: 80,
+//   }),
+// ); // 330
+
+// console.log(
+//   countTotalSalary({
+//     kiwi: 200,
+//     lux: 50,
+//     chelsy: 150,
+//   }),
+// ); // 400
+
+
+// Напиши функцию findBestEmployee(employees), которая принимает объект сотрудников и возвращает имя самого продуктивного(который выполнил больше всех задач).
+// Сотрудники и кол - во выполненых задач содержатся как свойства объекта в формате "имя": "кол-во задач".
+
+// const findBestEmployee = function(employees) {
+// 	const values = Object.values(employees);
+// 	const max = Math.max(...values);
+// 	console.log(max);
+// 	for (let key in employees) {
+// 		if (employees[key] === max) {
+// 			return key;
+// 		}
+// 	}
+// };
+// // или 
+// const findBestEmployee = (employees) =>
+//   Object.entries(employees).sort((a, b) => b[1] - a[1])[0][0];
+
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
 //  */
-// console.log(countProps({})); // 0
+// console.log(
+//   findBestEmployee({
+//     ann: 29,
+//     david: 35,
+//     helen: 1,
+//     lorence: 99,
+//   }),
+// ); // lorence
 
-// console.log(countProps({ name: 'Mango', age: 2 })); // 2
+// console.log(
+//   findBestEmployee({
+//     poly: 12,
+//     mango: 17,
+//     ajax: 4,
+//   }),
+// ); // mango
 
-// console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+// console.log(
+//   findBestEmployee({
+//     lux: 147,
+//     david: 21,
+//     kiwi: 19,
+//     chelsy: 38,
+//   }),
+// ); // lux
