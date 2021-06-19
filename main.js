@@ -75,15 +75,15 @@
 // [23, 11, "hello", "world", "Vasya", "some str", 777, "word", "Привет", "как сюда добраться"]
 
 
-const tryThis = [
-	[23, 11, ["hello", "world", "Vasya"]],
-	"some str",
-	[777, "word", ["Привет", ["как сюда добраться"]]],
-  ];
+// const tryThis = [
+// 	[23, 11, ["hello", "world", "Vasya"]],
+// 	"some str",
+// 	[777, "word", ["Привет", ["как сюда добраться"]]],
+//   ];
   
-console.log(tryThis.flat(Infinity));
-//   ххххххххххххххххххх   или     хххххххххххххх
-   console.log(newTryThis.join(' ').split(' '))
+// console.log(tryThis.flat(Infinity));
+// //   ххххххххххххххххххх   или     хххххххххххххх
+//    console.log(newTryThis.join(' ').split(' '))
   
   
   
