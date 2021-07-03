@@ -124,7 +124,7 @@ import users from './users.js'
 
 // console.log(getUsersWithFriend(users, 'Briana Decker'));
 // console.log(getUsersWithFriend(users, 'Goldie Gentry'));
-/ Task 9
+//  Task 9
 
 // Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
 // console.log(getNamesSortedByFriendsCount(users));
