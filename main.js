@@ -74,17 +74,15 @@
 // привести массив к одному уровню
 // [23, 11, "hello", "world", "Vasya", "some str", 777, "word", "Привет", "как сюда добраться"]
 
-
 // const tryThis = [
 // 	[23, 11, ["hello", "world", "Vasya"]],
 // 	"some str",
 // 	[777, "word", ["Привет", ["как сюда добраться"]]],
 //   ];
-  
+
 // console.log(tryThis.flat(Infinity));
 // //   ххххххххххххххххххх   или     хххххххххххххх
 //    console.log(newTryThis.join(' ').split(' '))
-  
 
 // const user = {
 //     name: 'John',
@@ -98,8 +96,6 @@
 //     configurable: false,
 // });
 
-
-
 // for (let key in user) {
 //     console.log(key);
 // }
@@ -110,18 +106,12 @@
 // const user3 = Object.assign({}, user);
 // const4 = JSON.parse(JSON.stringify(user))
 
-
-
-
-  
-
 // const user = {
 //     name: 'John',
 //     age: 23,
 //     surname: 'Smith',
 
-// }; 
-
+// };
 
 // Напиши функцию countTotalSalary(employees) принимающую объект зарплат. Функция считает общую сумму запрплаты работников и возращает ее. Каждое поле объекта, передаваемого в функцию, имеет вид "имя":"зарплата".
 
@@ -130,13 +120,12 @@
 // const salary = Object.values(employees);
 // for (let value of salary) {
 
-//  totalSalary += value; 
+//  totalSalary += value;
 // }
 // return totalSalary
 // };
 
 // const countTotalSalary = (employees) => Object.values(employees).reduce((acc, el) => acc + el, 0);
-
 
 // console.log(countTotalSalary({})); // 0
 
@@ -156,7 +145,6 @@
 //   }),
 // ); // 400
 
-
 // Напиши функцию findBestEmployee(employees), которая принимает объект сотрудников и возвращает имя самого продуктивного(который выполнил больше всех задач).
 // Сотрудники и кол - во выполненых задач содержатся как свойства объекта в формате "имя": "кол-во задач".
 
@@ -170,10 +158,9 @@
 // 		}
 // 	}
 // };
-// // или 
+// // или
 // const findBestEmployee = (employees) =>
 //   Object.entries(employees).sort((a, b) => b[1] - a[1])[0][0];
-
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
@@ -204,9 +191,8 @@
 //   }),
 // ); // lux
 
-
 // Напиши функцию calculateTotalPrice(allProdcuts, productName), которая получает массив объектов и имя продукта(значение свойства name).Возвращает общую стоимость продукта(цена * количество).
-// // Вызовы функции для проверки работоспособности твоей реализации.  
+// // Вызовы функции для проверки работоспособности твоей реализации.
 // const products = [{ name: 'Радар', price: 1300, quantity: 4 },
 // 	{ name: 'Сканер', price: 2700, quantity: 3 },
 // 	{ name: 'Дроид', price: 400, quantity: 7 }, { name: 'Захват', price: 1200, quantity: 2 },];
