@@ -189,3 +189,36 @@ console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
 
 	// const getSums = (arr) =>
 //   arr.reduce((acc, num, i) => (i > 0 ? [...acc, acc[i - 1] + num] : [num]), []);
+
+
+// Task 12
+
+// Возврат: строка, отформатированная как список имен,
+// разделенных запятыми, за исключением последних двух имен,
+// которые должны быть разделены амперсандом.
+
+// [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}] Вернет 'Bart, Lisa, Maggie, Homer & Marge',
+
+// [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}] вернет  'Bart, Lisa & Maggie'
+
+// [{name: 'Bart'},{name: 'Lisa'}] вернет 'Bart & Lisa',
+
+// [{name: 'Bart'}] вернет 'Bart'
+
+// [] вернет ''
+
+
+const makeList = (arr)=>{
+
+	const names = arr.map(({name})=> name)
+	if (names.length <=2){
+		return names.join(' & ') 
+	}else {
+		return names.slice(0, names.length - 1).join(', ') + ' & ' + names.pop()
+	}
+
+}
+
+
+console.log(makeList([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])); // 'Bart, Lisa, Maggie, Homer & Marge'
+console.log(makeList([]));
