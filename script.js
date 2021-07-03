@@ -1,0 +1,126 @@
+import users from './users.js'
+// console.log(users);
+
+// Task 1
+
+// Получить массив имен всех пользователей (поле name).
+// console.log(getUserNames(usersData))
+// [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
+
+// const getUserNames = usersData => {
+//   return usersData.map(user => user.name);
+// };
+// console.log(getUserNames(users));
+
+// Task 2
+
+// Получить массив объектов пользователей по цвету глаз (поле eyeColor).
+// console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
+
+// const getUsersWithEyeColor = (users, eyeColor) => {
+//   return users.filter(user => user.eyeColor === eyeColor);
+// };
+// console.log(getUsersWithEyeColor(users, 'blue'));
+
+// Task 3
+
+// Получить массив имен пользователей по полу (поле gender)
+// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+// const getUsersWithGender = (users, gender) => {
+// return users.filter(user => user.gender === gender)
+// .map(({name}) => name);
+// }
+// console.log(getUsersWithGender(users, 'male'));
+
+// const getUsersWithGender =  (users, gender) => {
+//     return users.reduce((acc, user) => {
+//         if(user.gender === gender) {
+//         acc.push(user.name);
+//         };
+//         return acc;
+//     }, [])
+// }
+
+// console.log(getUsersWithGender(users, 'male'));
+// const getUsersWithGender = (users, gender) => {
+
+// return users.filter(user => user.gender === gender)
+// .map(({name}) => name);
+// }
+// console.log(getUsersWithGender(users, 'male'));
+
+// const getUsersWithGender =  (users, gender) => {
+//     return users.reduce((acc, user) => {
+//         if(user.gender === gender) {
+//         acc.push(user.name);
+//         };
+//         return acc;
+//     }, [])
+// }
+
+// console.log(getUsersWithGender(users, 'male'));
+
+// const getUsersWithGender = (users, gender) => {
+//   return users.reduce((acc, user) => {
+//     return user.gender === gender ? [...acc, user.name] : acc;
+//   }, []);
+// };
+
+// console.log(getUsersWithGender(users, 'male'));
+
+// Task 4
+
+// Получить массив только неактивных пользователей (поле isActive).
+// console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+// const getInactiveUsers = users => users.filter(({ isActive }) => !isActive);
+// console.log(getInactiveUsers(users));
+
+// Task 5
+
+// Получить пользователя (не массив) по email (поле email, он уникальный).
+// console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
+// console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
+
+// const getUserWithEmail(users, email)
+
+// Task 6
+
+// Получить массив пользователей в возрасте от min до max
+
+// console.log( getUsersWithAge( users, 20, 30 ) );
+// [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
+// console.log( getUsersWithAge( users, 30, 40 ) );
+// [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
+
+// const getUsersWithAge = (users, min, max) => {
+//   return users.reduce((acc, user) => {
+//     return user.age >= min && user.age <= max ? [...acc, user] : acc;
+//   }, []);
+// };
+// console.log(getUsersWithAge(users, 20, 30));
+// console.log(getUsersWithAge(users, 30, 40));
+
+// Task 7
+
+// Получить общую сумму баланса (поле balance) всех пользователей.
+// console.log(calculateTotalBalance(users)); // 20916
+
+// const calculateTotalBalance = users => {
+//   return users.reduce((acc, { balance }) => acc + balance, 0);
+// };
+// console.log(calculateTotalBalance(users));
+
+// Task 8
+
+// Массив имен всех пользователей у которых есть друг с указанным именем.
+// console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+// console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+// const getUsersWithFriend = (users, friendName) => {
+//   return users
+//     .filter(({ friends }) => friends.includes(friendName))
+//     .map(({ name }) => name);
+// };
+
+// console.log(getUsersWithFriend(users, 'Briana Decker'));
+// console.log(getUsersWithFriend(users, 'Goldie Gentry'));
