@@ -1,4 +1,4 @@
-import users from './users.js'
+import users from "./users.js";
 // console.log(users);
 
 // Task 1
@@ -150,3 +150,42 @@ import users from './users.js'
 // //     .sort();
 
 // // console.log(getSortedUniqueSkills(users));
+
+// Task 11
+
+// На входе массив чисел, например: arr = [1,2,3,4,5].
+// Напишите функцию getSums(arr), которая возвращает массив его частичных сумм.
+// Иначе говоря, вызов getSums(arr) должен возвращать новый массив из такого же числа элементов,
+// в котором на каждой позиции должна быть сумма элементов arr до этой позиции включительно.
+
+// То есть:
+// для arr = [ 1, 2, 3, 4, 5 ]
+// getSums( arr ) = [ 1, 1+2, 1+2+3, 1+2+3+4, 1+2+3+4+5 ] = [ 1, 3, 6, 10, 15 ]
+// Функция не должна модифицировать входной массив.
+// В решении используйте метод arr.reduce.
+
+const getSum = (arr) => {
+  return arr.reduce((acc, num, index) => {
+    if (index > 0) {
+      acc.push(acc[index - 1] + num);
+    } else {
+      return [num];
+    }
+    return acc;
+  }, []);
+};
+
+console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
+
+
+// const getSums = (arr) => {
+	//   let prevNum = 0;
+	//   return arr.reduce((acc, num) => {
+	//     acc.push((prevNum += num));
+	//     return acc;
+	//   }, []);
+	// };
+	
+
+	// const getSums = (arr) =>
+//   arr.reduce((acc, num, i) => (i > 0 ? [...acc, acc[i - 1] + num] : [num]), []);
