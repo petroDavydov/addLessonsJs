@@ -124,3 +124,21 @@ import users from './users.js'
 
 // console.log(getUsersWithFriend(users, 'Briana Decker'));
 // console.log(getUsersWithFriend(users, 'Goldie Gentry'));
+/ Task 9
+
+// Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
+// console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+// const getNamesSortedByFriendsCount = users => {
+//   return [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(({ name }) => name);
+// };
+// console.log(getNamesSortedByFriendsCount(users));
+
+// Task 10
+
+// Получить массив всех умений всех пользователей (поле skills), при этом не должно быть
+// повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
+// console.log(getSortedUniqueSkills(users));
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
