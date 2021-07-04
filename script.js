@@ -164,18 +164,18 @@ import users from "./users.js";
 // Функция не должна модифицировать входной массив.
 // В решении используйте метод arr.reduce.
 
-const getSum = (arr) => {
-  return arr.reduce((acc, num, index) => {
-    if (index > 0) {
-      acc.push(acc[index - 1] + num);
-    } else {
-      return [num];
-    }
-    return acc;
-  }, []);
-};
+// const getSum = (arr) => {
+//   return arr.reduce((acc, num, index) => {
+//     if (index > 0) {
+//       acc.push(acc[index - 1] + num);
+//     } else {
+//       return [num];
+//     }
+//     return acc;
+//   }, []);
+// };
 
-console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
+// console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
 
 
 // const getSums = (arr) => {
@@ -208,17 +208,19 @@ console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
 // [] вернет ''
 
 
-const makeList = (arr)=>{
+// const makeList = (arr)=>{
 
-	const names = arr.map(({name})=> name)
-	if (names.length <=2){
-		return names.join(' & ') 
-	}else {
-		return names.slice(0, names.length - 1).join(', ') + ' & ' + names.pop()
-	}
+// 	const names = arr.map(({name})=> name)
+// 	if (names.length <=2){
+// 		return names.join(' & ') 
+// 	}else {
+// 		return names.slice(0, names.length - 1).join(', ') + ' & ' + names.pop()
+// 	}
 
-}
+// }
 
 
-console.log(makeList([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])); // 'Bart, Lisa, Maggie, Homer & Marge'
-console.log(makeList([]));
+// console.log(makeList([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])); // 'Bart, Lisa, Maggie, Homer & Marge'
+// console.log(makeList([]));
+
+
