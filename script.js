@@ -45,8 +45,8 @@ import users from './users.js'
 // console.log(getUsersWithGender(users, 'male'));
 // const getUsersWithGender = (users, gender) => {
 
-// return users.filter(user => user.gender === gender)
-// .map(({name}) => name);
+return users.filter(user => user.gender === gender)
+.map(({name}) => name);
 // }
 // console.log(getUsersWithGender(users, 'male'));
 
@@ -144,10 +144,10 @@ import users from './users.js'
 // console.log(getSortedUniqueSkills(users));
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
 // / const getSortedUniqueSkills = users =>
-// //   users
-// //     .flatMap(({ skills }) => skills)
-// //     .filter((skill, index, array) => array.indexOf(skill) === index)
-// //     .sort();
+//   users
+//     .flatMap(({ skills }) => skills)
+//     .filter((skill, index, array) => array.indexOf(skill) === index)
+//     .sort();
 
 // // console.log(getSortedUniqueSkills(users));
 
