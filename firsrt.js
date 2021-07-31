@@ -17,7 +17,6 @@ ulList.append(...ingredients);
 // =================
 
 
-const ul = documen.querySelector('#gallery')
-const galleryElement = 
+const ul = documen.querySelector('#gallery');
 
 
