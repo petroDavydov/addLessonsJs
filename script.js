@@ -1,4 +1,4 @@
-import users from './users.js'
+// import users from './users.js'
 // console.log(users);
 
 // Task 1
@@ -45,8 +45,7 @@ import users from './users.js'
 // console.log(getUsersWithGender(users, 'male'));
 // const getUsersWithGender = (users, gender) => {
 
-return users.filter(user => user.gender === gender)
-.map(({name}) => name);
+return users.filter(user => user.gender === gender).map(({ name }) => name)
 // }
 // console.log(getUsersWithGender(users, 'male'));
 
@@ -175,10 +174,7 @@ return users.filter(user => user.gender === gender)
 //   }, []);
 // };
 
-
 // console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
-
-
 
 // console.log(getSum([1, 2, 3, 4, 5])); // [1,3,6,10,15]
 
@@ -209,33 +205,40 @@ return users.filter(user => user.gender === gender)
 
 // [] вернет ''
 
-
-
 // const makeList = (arr)=>{
 
 // 	const names = arr.map(({name})=> name)
 // 	if (names.length <=2){
-// 		return names.join(' & ') 
+// 		return names.join(' & ')
 // 	}else {
 // 		return names.slice(0, names.length - 1).join(', ') + ' & ' + names.pop()
 // 	}
 
 // }
 
-
 // console.log(makeList([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])); // 'Bart, Lisa, Maggie, Homer & Marge'
 // console.log(makeList([]));
 
+// const makeList = arr => {
+//   const names = arr.map(({ name }) => name)
+//   if (names.length <= 2) {
+//     return names.join(' & ')
+//   } else {
+//     return names.slice(0, names.length - 1).join(', ') + ' & ' + names.pop()
+//   }
+// }
 
-const makeList = arr => {
-  const names = arr.map(({ name }) => name)
-  if (names.length <= 2) {
-    return names.join(' & ')
-  } else {
-    return names.slice(0, names.length - 1).join(', ') + ' & ' + names.pop()
-  }
-}
+// console.log(makeList([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }, { name: 'Homer' }, { name: 'Marge' }])) // 'Bart, Lisa, Maggie, Homer & Marge'
+// console.log(makeList([]))
 
-console.log(makeList([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }, { name: 'Homer' }, { name: 'Marge' }])) // 'Bart, Lisa, Maggie, Homer & Marge'
-console.log(makeList([]))
-
+// const intNums = [-1, 2, -3, 4, -5, 6, -7, 0, 8]
+// const hug = function (arr) {
+//   let res = 0
+//   for (let i = 0; i < arr.length; ++i) {
+//     if (Math.sign(arr[i] !== 1 && arr[i] !== 0)) {
+//       ++res
+//     }
+//   }
+//   return res
+// }
+// console.log(hug(intNums))
